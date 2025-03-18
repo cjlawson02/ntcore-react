@@ -1,15 +1,15 @@
 import React from "react";
 
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { StoryFn, Meta } from "@storybook/react";
 
 import { Gauge, GaugeProps } from "../index";
 
 export default {
     title: "Gauge",
     component: Gauge,
-} as ComponentMeta<typeof Gauge>;
+} as Meta<typeof Gauge>;
 
-const Template: ComponentStory<typeof Gauge> = (args: GaugeProps) => (
+const Template: StoryFn<typeof Gauge> = (args: GaugeProps) => (
     <Gauge {...args} />
 );
 

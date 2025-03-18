@@ -1,4 +1,3 @@
-import React from "react";
 import { Transform2d, transformsToSVGPoints, useAllianceFlip } from "../Util";
 import Units from "../../../lib/util/Units";
 

@@ -32,7 +32,7 @@ export default function NTProvider({
         setNtConnectionCreatedUsingTeamNumber,
     ] = useState<boolean>(false);
 
-    const oldTeamNumber = useRef<number | undefined>();
+    const oldTeamNumber = useRef<number | undefined>(undefined);
 
     useEffect(() => {
         // Create a network tables connection if one doesn't exist

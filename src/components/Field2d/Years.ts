@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Units from "../../lib/util/Units";
 import { Year } from "../../lib/util/Year";
 
@@ -6,7 +7,7 @@ import Field2dChargedUp from "./Fields/Field2dChargedUp";
 type YearData = {
     fieldMirrored: boolean;
     fieldSize: [number, number];
-    fieldBase: () => JSX.Element;
+    fieldBase: () => ReactNode;
 };
 
 export const Years: { [key in Year]: YearData } = {

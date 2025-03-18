@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { StoryFn, Meta } from "@storybook/react";
 
 import { Field2d, Field2dProps } from "../index";
 
@@ -9,9 +9,9 @@ import { Year } from "../../lib/util/Year";
 export default {
     title: "Field2d",
     component: Field2d,
-} as ComponentMeta<typeof Field2d>;
+} as Meta<typeof Field2d>;
 
-const Template: ComponentStory<typeof Field2d> = (args: Field2dProps) => (
+const Template: StoryFn<typeof Field2d> = (args: Field2dProps) => (
     <Field2d {...args} />
 );
 
